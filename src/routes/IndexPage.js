@@ -11,7 +11,7 @@ function IndexPage() {
 
   const imageStyle = {width: '400px'};
 
-  const carouselContainerStyle = {width: '400px', height: '800px', textAlign: 'center', margin: '3em auto'};
+  const carouselContainerStyle = {width: '400px', textAlign: 'center', margin: '2em auto'};
 
   return (
     <div className='normal' style={carouselContainerStyle}>
