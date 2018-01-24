@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1d809c4a-13e5-478b-9001-87c6331ce814" name="izumisagiri" url="http://140.143.157.228">
+        <fileTransfer host="140.143.157.228" port="22" privateKey="$USER_HOME$/.ssh/sagiri" rootFolder="/home/ubuntu" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
