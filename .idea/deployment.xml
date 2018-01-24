@@ -5,7 +5,7 @@
       <paths name="izumisagiri">
         <serverdata>
           <mappings>
-            <mapping deploy="/izumisagiri" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/izumisagiri/dist" local="$PROJECT_DIR$/dist" web="/" />
           </mappings>
         </serverdata>
       </paths>
