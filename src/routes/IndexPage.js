@@ -21,9 +21,12 @@ export class IndexPage extends React.Component {
   }
 
   emojiClickHandler() {
-    let newEmojiIndex = Date.now() % 30;
+    const randomNumber = () => Math.floor(Math.random() * 30);
+
+    let newEmojiIndex = randomNumber();
+
     while (newEmojiIndex === this.state.emojiIndex) {
-      newEmojiIndex = Date.now() % 30
+      newEmojiIndex = randomNumber()
     }
 
     this.setState({emojiIndex: newEmojiIndex});
