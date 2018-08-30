@@ -6,7 +6,6 @@ import image1 from '../assets/moe/1.jpg';
 import image2 from '../assets/moe/2.jpg';
 import image3 from '../assets/moe/3.jpg';
 import image4 from '../assets/moe/4.jpg';
-import {emojiImage} from '../utils/emojiImageMapping';
 
 export class IndexPage extends React.Component {
 
@@ -35,13 +34,13 @@ export class IndexPage extends React.Component {
   render() {
 
     const emojiTodayStyle = {textAlign: 'center', margin: '2em auto'};
-    let emojiIndex = Date.now() % 30;
+    let emojiIndex = Date.now() % 81 + 1;
 
     const imageStyle = {width: '400px'};
     const carouselContainerStyle = {width: '400px', textAlign: 'center', margin: '2em auto', display: 'none'};
 
     const getTodayEmoji = () => {
-      return emojiImage[emojiIndex]
+      return require(`../assets/gif/${emojiIndex}.gif`)
     };
 
     return ([
