@@ -17,7 +17,7 @@ export class IndexPage extends React.Component {
       emojiIndex: Date.now() % 30
     };
 
-    this.emojiClickHandler = ::this.emojiClickHandler
+    this.emojiClickHandler = this.emojiClickHandler.bind(this)
   }
 
   emojiClickHandler() {
@@ -33,7 +33,6 @@ export class IndexPage extends React.Component {
   };
 
   render() {
-
 
     const emojiTodayStyle = {textAlign: 'center', margin: '2em auto'};
     let emojiIndex = Date.now() % 30;
