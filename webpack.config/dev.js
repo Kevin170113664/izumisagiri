@@ -34,6 +34,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
+              name: '[name].[ext]',
               limit: 300
             }
           }
